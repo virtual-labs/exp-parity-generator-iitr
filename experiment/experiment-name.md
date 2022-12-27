@@ -1,1 +1,1 @@
-## Experiment name
+## To design a BCD to Decimal decoder.
