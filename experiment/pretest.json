@@ -1,39 +1,10 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"What type of decoder is the IC 7442?","answers":{"a":"Priority decoder","b":"BCD to decimal decoder","c":"BCD to 7-Segment decoder","d":"Decimal to BCD decoder"},"correctAnswer":"b"},
+{"question":"BCD can be considered to be a subset of full binary notation, in which states used are","answers":{"a":"0000-1011","b":"0000-1001","c":"0001-1000","d":"11111-00000"},"correctAnswer":"b"},
+{"question":"In a decoder,","answers":{"a":"The number of inputs and outputs are equal.","b":"The number of outputs is greater than the number of inputs.","c":"The number of inputs is greater than the number of outputs.","d":"There is no input required."},"correctAnswer":"b"},
+{"question":"The BCD to decimal decoder shown in figure given below is examined with a logic analyzer and the results are shown in the waveforms in figure. What if anything is wrong with the circuit?","image":"<img src='images/output-onlinepngtools(2.1).png'/>","answers":{"a":"The “2” output is shorted to Vcc","b":"The A\u2081 input node is internally stuck at LOW.","c":"The A\u2081 input is internally open.","d":"Nothing is wrong with the circuit"},"correctAnswer":"b"},
+{"question":"Operating free air temperature range of this IC 7442 is","answers":{"a":"70°C - 80°C","b":"0°C - 70°C","c":"80°C - 100°C","d":"\u221270°C - 70°C"},"correctAnswer":"b"},
+{"question":"Gate that can be used as basic decoding element is","answers":{"a":"NAND gate","b":"NOT gate","c":"AND gate","d":"OR gate"},"correctAnswer":"c"},
+{"question":"Typical propagation delay for this Decoder IC is","answers":{"a":"7 ns","b":"14 ns","c":"17 ns","d":"23 ns"},"correctAnswer":"c"},
+{"question":"The highest decimal digit that can be coded to BCD is","answers":{"a":"7","b":"8","c":"9","d":"10"},"correctAnswer":"c"},
+{"question":"The number of inverters present in 7442 IC is","answers":{"a":"6","b":"7","c":"8","d":"9"},"correctAnswer":"c"},
+{"question":"How many four input NAND gates are present in IC 7442?","answers":{"a":"10","b":"12","c":"4","d":"5"},"correctAnswer":"a"}]

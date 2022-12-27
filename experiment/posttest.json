@@ -1,39 +1,10 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"Fig. 1 shows a BCD to decimal decoder. What inputs (A\u2083, A\u2082, A\u2081, A\u2080) are required to produce the output levels as shown?","image":"<img src='images/output-onlinepngtools(3.1).png'/>","answers":{"a":"A BCD to decimal decoder with inputs 0,1,1,1","b":"A binary to decimal encoder with inputs 0,1,1,1","c":"A decimal to binary decoder with inputs 1,1,1,0","d":"A decimal to BCD encoder with inputs 1,1,1,0"},"correctAnswer":"a"},
+{"question":"Which statement below best describes the function of a decoder?","answers":{"a":"Decoders are special ICs that are used to make it possible for one brand of computer to talk to another.","b":"A decoder will convert a binary number into a specific output representing a particular character or digit.","c":"A decoder will convert a decimal number into a proper binary equivalent.","d":"Decoders are used to prevent improper operation of digital system."},"correctAnswer":"b"},
+{"question":"What is the application of BCD to decimal decoder IC?","answers":{"a":"Inverter","b":"Buffer","c":"Adder","d":"LED Driver"},"correctAnswer":"d"},
+{"question":"The other name of BCD is","answers":{"a":"Packet decimal","b":"Binary decimal","c":"Hexagonal decimal","d":"Excess-3 code"},"correctAnswer":"a"},
+{"question":"One way to convert BCD to binary using the hardware approach is","answers":{"a":"By using MSI IC circuits.","b":"By using a keyboard encoder.","c":"By using an ALU.","d":"By using UART."},"correctAnswer":"a"},
+{"question":"A decoder can be used as a demultiplexer by","answers":{"a":"Trying all enable pins LOW.","b":"Trying all data-select lines LOW.","c":"Trying all data-select lines HIGH.","d":"Using the input lines for data selection and an enable line for data input."},"correctAnswer":"d"},
+{"question":"The main advantage of BCD code over other codes is","answers":{"a":"Solving an arithmetic question in BCD is much faster.","b":"Number of bits is reduced.","c":"Decimal number can easily be decoded.","d":"There is no wastage of bits in BCD."},"correctAnswer":"c"},
+{"question":"Can positive and negative integers be represented in BCD?","answers":{"a":"No","b":"Yes","c":"Not sure","d":"Don’t know"},"correctAnswer":"b"},
+{"question":"To represent a 3-digit decimal number in BCD, the minimum number of bits required are","answers":{"a":"4","b":"12","c":"8","d":"6"},"correctAnswer":"b"},
+{"question":"To deal with currency which of the following codes is preferred?","answers":{"a":"Excess-3 code","b":"Binary code","c":"Gray code","d":"BCD code"},"correctAnswer":"d"}]
