@@ -1,28 +1,26 @@
-## Introduction (Round 0)
+# Introduction
 
 
-<br>
-
-<b>Discipline | <b> 
+<b>Discipline | <b>Electronics and Communication Engineering
 :--|:--|
-<b> Lab | <b> Surveying
-<b> Experiment|     <b> 8. Carry out fly levelling using auto level.
+<b> Lab | <b> Analog and Digital Electronics-I
+<b> Experiment|     <b> To design a 3-bit even/odd parity generator circuit.
+### About the Experiment 
 
-<h5> About the Experiment : </h5> <br>
+Fill a brief description of this experiment here
 
-To find out elevations of various points on the ground using auto level.
-
-
-<b>Name of Developer | <b> 
+<b>Name of Developer | <b> Prof RS Anand 
 :--|:--|
-<b> Institute | <b> 
-<b> Email id|     <b> 
-<b> Department | 
+<b> Institute | <b>  IIT Roorkee
+<b> Email id|     <b>  anandfee@gmail.com	
+<b> Department |  Electrical Engineering
 
-#### Contributors List
+### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
+1 | Rajeev Kumar | Senior Research Fellow | Electrical Engineering | IIT Roorkee | rajeevkumar.rke@gmail.com
+2 | Nipun Jain | Project Associate | Electrical Engineering | IIT Roorkee | nipunjain1305@gmail.com
+3 | Pragya Daksh | Project Associate | Electrical Engineering | IIT Roorkee | prgdaksh@gmail.com
+4 | Piyush Rawat | Project Associate | Electrical Engineering | IIT Roorkee | rawatpiyush72@gmail.com
 
-
-<br>
