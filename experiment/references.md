@@ -1,11 +1,9 @@
 <div style="text-align:justify">
 
-1. R P Jain, “Modern digital electronics”, 4<sup>th</sup> Edition, Tata McGraw Hill Education Private Limited.
-2. Anil K. Maini, “Digital electronics principles, Devices and Applications”, John Wiley & Sons, Ltd.
-3. Donald P Leach, Albert Paul Malvino and Goutam Saha, “Digital Principles and applications” 7<sup>th</sup> Edition, Tata McGraw Hill Education Private Limited.
-4. A. Anand Kumar, "Fundamentals of Digitals Circuits", 4<sup>th</sup> edition, PHI Learning Private Limited
-5. Paul Scherz and Simon Monk, “Practical Electronics for Inventors” Fourth Edition, McGraw Hill Education, USA 6. Raj Kamal, "Digital System: Principles and Design", 3<sup>rd</sup> edition, Pearson Education
-6. Neal S. Widmer, Gregory L. Moss, and Ronald J. Tossi, “Digital Systems: Principles and Applications,” 12<sup>th</sup> Ed., Pearson (2018)
-7. Raj Kamal, "Digital System: Principles and Design", 3<sup>rd</sup> edition, Pearson Education
+1. Anil K. Malini, "Digital Electronics Principle, Devices And Application", John Wiley & Sons, Ltd
+2. Donald P Leach, Albert Paul Malvina and Gautam Saha, "Digital Principle And Applications", Tata McGraw Hill Education Private Limited
+3. R.P.Jain, "Modern Digital Electronics", 4<sup>th</sup> edition, McGraw Hill Education ( India ) Private Limited
+4. M.morris Mano and Michael D. Ciletti, "Digital design with an introduction to the Verilog HDL", 7<sup>th</sup> edition, Tata McGraw Hill Education Private Limited
+5. William Gothmann H, "Digital Electronics: An Introduction To Theory And Practice", 2<sup>nd</sup> edition, Prentice Hall, 1982
 
 </div>

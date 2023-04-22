@@ -1,1 +1,1 @@
-## To design a BCD to Decimal decoder.
+##   Even/Odd Parity Generator.

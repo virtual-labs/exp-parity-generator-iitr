@@ -1,1 +1,1 @@
-#### To study the operation of BCD to decimal decoder using IC-7442
+#### To design a 3-bit even/odd parity generator circuit.

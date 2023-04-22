@@ -159,7 +159,7 @@
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-    
+  
   }
   
   .Components div button:active:after {
@@ -177,7 +177,6 @@
   li::marker {
     font-weight: bold;
 }
-
 
 #mid {
     position: absolute;
@@ -200,7 +199,7 @@
     left: 980px;
     border: 2px #f2f2f2 black;
     width: 360px;
-    height:480px;
+    height: 480px;
     margin-left: 20px;
     border-radius:5px;
     box-shadow: 3px 4px 6px #262626;
@@ -217,7 +216,7 @@
 }
 
 .cell
-{  
+{
     width: 50px;
     height: 20px;
     border: 2px solid black;
@@ -274,7 +273,6 @@
     background-image: url('../images/board.png');
     display: block;
     visibility: hidden;
-
 }
 
 
@@ -289,27 +287,30 @@
     top: 87px;
     left: 597px;
 }
-#led1 {
-    background-size: cover;
-    display: inline-block;
-    visibility: hidden;
-        position: absolute;
-    top: 87px;
-    left: 732px;
-}
+
 #supply {
     height: 100px;
     width: 155px;
     visibility: hidden;
     margin: 345px 0px 5px 20px;
     padding: 10px;
-    
 }
+
+#ic74513 {
+    height: 154px;
+    width: 96px;
+   top:72px;
+   left:203px;
+    display: inline-block;
+    visibility: hidden;
+
+}
+
 
 #ic7404img
 {
 position: absolute;
-top:57px;
+top:56px;
 left:1px;
 visibility: hidden;
   
@@ -407,7 +408,7 @@ a
 }
 
 /*
-#breadbutton                                                   
+#breadbutton                                                    
 {   width: 130px;
     height:40px;
     background: #5433FF;
@@ -421,8 +422,21 @@ a
     color: #5433FF;
 
 }
+#ic1button                                       
+{   width: 110px;
+    height:40px;
+    background: #5433FF;
+    border: 2px solid #5433ff;
+    border-radius: 10px;
+    color: #fff;
+}
+#ic1button:hover                                       
+{
+    background-color: #ffffff;
+    color: #5433FF;
 
-#ic2button                                          
+}
+#ic2button                                         
 {   width: 110px;
     height:40px;
     background: #5433FF;
@@ -437,7 +451,7 @@ a
 
 }
 
-#supplybutton                                            
+#supplybutton                                         
 {   
     width: 150px;
     height:40px;
@@ -452,7 +466,7 @@ a
     color: #5433FF;
 
 }
-#switchbutton                                         
+#switchbutton                                        
 {   width: 170px;
     height:40px;
     background: #5433FF;
@@ -466,7 +480,7 @@ a
     color: #5433FF;
 
 }
-#ledbutton                                                
+#ledbutton                                                   
 {   width: 110px;
     height:40px;
     background: #5433FF;
@@ -504,9 +518,11 @@ a
 
 #checkbutton                                      /*      check connections buttton  */
 {   
+  
     border: 2px rgb(0, 168, 8) solid;
     background: rgb(0, 168, 8);  
     font-weight: bolder;
+
 }
 #checkbutton:hover                                  
 {
@@ -516,22 +532,26 @@ a
 
 }
 #startbutton                                          /*      start button   */
-{ border: 2px #5433FF solid;
+{ 
+    border: 2px #5433FF solid;
     background: #5433FF;
     font-weight: bolder;
+    
 
 }
 #startbutton:hover
 {
     color: #5433FF;
-  background: white;
-  font-size: 16px;
+    background: white;
+    font-size: 16px;
 
 }
 #resetbutton                           /*reset button*/
-{   border: 2px rgb(255, 54, 54) solid;
+{   
+    border: 2px rgb(255, 54, 54) solid;
     background: rgb(255, 54, 54);    
     font-weight: bolder;
+    
 
 }
 #resetbutton:hover 
@@ -565,8 +585,7 @@ footer
     color: #fff;
     background-color: #333;
     font-family: 'Raleway', sans-serif;
-    z-index:-2;
-}
+    z-index:-2;}
 
 #led2
 {
@@ -574,21 +593,4 @@ footer
 	margin-left: -10px;
 	margin-top: 5px;
 }
-#led3
-{
-	position: absolute;
-	margin-left: -10px;
-	margin-top: 5px;
-}
-#connector2
-{
-    position: absolute;
-    top:2px;
-    left: 429px;
-}
-#connector1
-{
-    position: absolute;
-    top:245px;
-    left: 429px;
-}
+
