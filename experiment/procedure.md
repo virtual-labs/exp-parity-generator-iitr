@@ -1,39 +1,67 @@
-## Procedure
-<br>
-<div style="text-align:justify">
+## Procedure<br>
+<div style=text-align:justify">
 
-Click on **“Click Here”** in Simulation tab.
+#### Choose between **'Even Parity Generator'** or **'Odd Parity Generator'** from **Simulation** tab.
 
-1.  Click on the **Component** button to place components on the table.
+#### Familiarise with components:
+<center>
+  
+![](images/board.png "Breadbord")&emsp; ![](images/supply.png "5V DC Supply")&emsp; ![](images/toggle.png "Input A")&emsp; ![](images/toggle.png "Input B")&emsp; ![](images/toggle.png "Input C")&emsp; ![](images/ic1.png "IC7486")&emsp; ![](images/ic2.png "IC7404")&emsp; ![](images/led1.png "Led")
 
+**Fig. 1: Components** </center>
+
+#### Follow these steps to perform the experiment on simulator:
+
+### **A. Even Parity Generator**
+
+1\. Fill the truth table and click on '**CHECK**' button.  
+2\. Click on the component button to place the component on the table.  
+3\. Make connections as per the circuit diagram and pin diagram of the IC or according to connection table.  
 <center>
 
-![](images/board1.png "Breadbord")&emsp; ![](images/supply1.png "5V DC Supply")&emsp; ![](images/led.png "Led(L0-L9)")&emsp; ![](images/ic1.png "IC 7422")&emsp; ![](images/switch1.png "Switch")&emsp; ![](images/resistance1.png "1KΩ(R0-R9)")  
+![](images/image1.1ins.png)
 
-**Fig. 1 Components** </center>
+**Fig. 2: Circuit diagram of even parity generator.**
 
-  
-2.  Make connections as per the circuit diagram and pin diagram of IC or according to connection table.
+![](images/image2ins.png)
 
-<center> 
+**Fig. 3: Pin diagram of IC-7486.**
 
-![](images/Fig.3circuitdiagram.png)
+**Table 1: Connection table for even parity generator**
 
-**Fig. 2 Circuit diagram of BCD to Decimal decoder**
+![](images/table1.png) </center>
 
-![](images/Fig.4.png)
+4\. Feed input **A** and **B** to one gate of IC and input **C** to another gate.  
+5\. Click on '**Check Connections**' button. If connections are right, the '**Start Simulation**' button will become active. Click on it to start simulation.  
+6\. Click on the toggle switches '**A**', '**B**' and '**C**' to perform simulation.
+ 
 
-**Fig. 3 Pin diagram of IC 7442** 
+### **B. Odd Parity Generator**
 
-**Table 1: Connection table**
+1\. Fill the truth table and click on '**CHECK**' button.  
+2\. Click on the component button to place the component on the table.  
+3\. Make connections as per the circuit diagram and pin diagrams of the ICs or according to connection table.  
+<center>
+ 
+![](images/image3.1ins.png)
 
-![connection table](images/Table1.png)  </center> 
-  
-3.  Click on **Check Connections** button. If connections are right, click on **'OK'**, then **Simulation** will become active.
-4.  Provide the input by clicking toggle switches **A<sub>0</sub>**, **A<sub>1</sub>**, **A<sub>2</sub>** and **A<sub>3</sub>**.
-5.  Fill the observed values in the **Truth Table**.
-6.  Verify Truth Table by clicking on **Check** button, if outputs are correct then click on **'OK'**.
-7.  Click on the **Reset** button to reset the page.
+**Fig. 4: Circuit diagram of odd parity generator.**
 
+![](images/image2ins.png)
+
+**Fig. 5: Pin diagram of IC-7486.**
+
+![](images/image4ins.png)
+
+**Fig. 6: Pin diagram of IC-7404.**
+
+**Table 2: Connection table for odd parity generator**
+
+![](images/table2.png)
+</center>
+
+4\. Feed input **A** and **B** to one gate of IC and input **C** to another gate.  
+5\. Click on '**Check Connections**' button. If connections are right, the '**Start Simulation**' button will become active. Click on it to start simulation.  
+6\. Click on the toggle switches '**A**', '**B**' and '**C**' to perform simulation.
 
 </div>

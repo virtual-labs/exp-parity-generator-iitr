@@ -2,8 +2,8 @@
 
    "details": [
        {
-			"Experiment": "To design a BCD to Decimal decoder.",     
-			"Lab": "Hybrid Analog and Digital Electronics Lab",               
+			"Experiment": "Even/Odd Parity Generator.",     
+			"Lab": "Hybrid Analog And Digital Electronics",               
 			"Discipline": "Electronics and Communication Engineering",				 
 			"Technology": "HTML, JavaScript, CSS"         
        }

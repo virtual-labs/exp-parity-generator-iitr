@@ -2,94 +2,98 @@
 #### Please attempt the following questions
 
 
-Q1. What type of decoder is the IC 7442?
+Q1. When the inputs to an exclusive-OR are the same logic level, the output is  
 
-A  Priority decoder  
-<b>B  BCD to decimal decoder</b>  
-C  BCD to 7-Segment decoder  
-D  Decimal to BCD decoder  
+<b>A  Zero</b>  
+B  One  
+C  High  
+D  Indeterminate  
+<br>
+
+
+Q2. How many exclusive-OR gates are needed for the circuit of 4–bit parity generator?  
+
+A  One  
+B  Two  
+<b>C  Three</b>  
+D  Four  
 <br>
   
-  
-Q2. BCD can be considered to be a subset of full binary notation, in which states used are
+   
+Q3. Which gates are ideal for generating the even parity bits?  
 
-A  0000-1011  
-<b>B  0000-1001</b>  
-C  0001-1000  
-D  11111-00000  
+A  AND  
+B  EX-NOR  
+<b>C  EX-OR</b>  
+D  NAND  
 <br>
   
-  
-Q3. In a decoder,
+    
+Q4. The Boolean equation for the exclusive-OR function is  
 
-A  The number of inputs and outputs are equal.  
-<b>B  The number of outputs is greater than the number of inputs.</b>  
-C  The number of inputs is greater than the number of outputs.  
-D  There is no input required.  
+<b>A  X=A'B+AB'</b>  
+B  X=A'B'+AB  
+C  X=AB  
+D  X=A+B  
 <br>
   
-  
-Q4. The BCD to decimal decoder shown in figure given below is examined with a logic analyzer and the results are shown in the waveforms in figure. What if anything is wrong with the circuit?
-  
-![](images/output-onlinepngtools(2.1).png)  
+   
+Q5. Which data and parity bit combination is correct for an ODD parity data transmission system?  
 
-A  The “2” output is shorted to V<sub>cc</sub>  
-<b>B  The A<sub>1</sub> input node is internally stuck at LOW.</b>  
-C  The A<sub>1</sub> input is internally open.  
-D  Nothing is wrong with the circuit  
+A  data = 1110 0000 parity = 1  
+B  data = 0100 1010 parity = 1  
+C  data = 0000 0000 parity = 0  
+<b>D  data = 1111 1111 parity = 1</b>  
 <br>
   
-  
-Q5. Operating free air temperature range of this IC 7442 is
+   
+Q6. The odd parity output of decimal number 9 is  
 
-A  70°C - 80°C  
-<b>B  0°C - 70°C</b>  
-C  80°C - 100°C  
-D  &#8722;70°C - 70°C  
+<b>A  1</b>  
+B  0011  
+C  0  
+D  1001  
 <br>
   
-  
-Q6. Gate that can be used as basic decoding element is
+   
+Q7. In an even parity system, which of the following will generate a LOW parity bit?  
 
-A  NAND gate  
-B  NOT gate  
-<b>C  AND gate</b>  
-D  OR gate  
+A  1110101  
+B  1001111  
+<b>C  1011010</b>  
+D  1000000  
 <br>
   
-  
-Q7. Typical propagation delay for this Decoder IC is
+   
+Q8. How many types of parity bits are found?  
 
-A  7 ns  
-B  14 ns  
-<b>C  17 ns</b>  
-D  23 ns  
+A  3  
+B  4  
+<b>C  2</b>  
+D  1  
 <br>
   
-  
-Q8. The highest decimal digit that can be coded to BCD is
+    
+Q9. Parity generator is a  
 
-A  7  
-B  8  
-<b>C  9</b>  
-D  10  
+A  Sequential circuit  
+<b>B  Combinational circuit</b>  
+C  Message generator  
+D  None of the above  
 <br>
   
-  
-Q9. The number of inverters present in 7442 IC is
+    
+Q10. For even parity generator, number of 1s in message  
 
-A  6  
-B  7  
-<b>C  8</b>  
-D  9  
-<br>
-  
-  
-Q10. How many four input NAND gates are present in IC 7442?
+A  Becomes odd  
+<b>B  Becomes even</b>  
+C  Does not change  
+D  Can't say  
 
-<b>A  10</b>  
-B  12  
-C  4  
-D  5   
 
+
+
+
+
+ 
 
