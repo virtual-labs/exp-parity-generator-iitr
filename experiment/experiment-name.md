@@ -1,1 +1,1 @@
-## Experiment name
+##   Even/Odd Parity Generator.
