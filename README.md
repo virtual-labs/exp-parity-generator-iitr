@@ -4,7 +4,7 @@
 <b>Discipline | <b>Electronics and Communication Engineering
 :--|:--|
 <b> Lab | <b> Analog and Digital Electronics-I
-<b> Experiment|     <b> To design a 3-bit even/odd parity generator circuit.
+<b> Experiment|     <b>7. To design a 3-bit even/odd parity generator circuit.
 ### About the Experiment 
 
 Fill a brief description of this experiment here

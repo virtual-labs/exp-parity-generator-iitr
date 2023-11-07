@@ -17,15 +17,18 @@ Parity generator is a combinational circuit that accepts an (n-1)-bit stream dat
 ### **1\. Even Parity Generator**
 
 Let us assume that a 3-bit message is to be transmitted with an even parity bit. The three bits- A, B and C constitute the message and are the inputs to the circuit. The parity bit P is the output. For even parity, the bit P must be generated so as to make the total number of 1’s (including P) even. The circuit diagram of even parity generator shown in fig.1 along with the Boolean expression for even parity generator. In Table-1, the parity bit is 1 when the total number of 1’s is even as a whole (including parity bit).
+
 <center>
 
-![](images/image6.png)
+  ![](images/image6.png)
 
-**Fig. 1: Circuit diagram of even parity generator.**
+  **Fig. 1: Circuit diagram of even parity generator.**</center>
 
-**Table 1: Truth table of even parity generator**
+<center>
 
-<table style="text-align:center;margin-right:8%;color:black;">
+  **Table 1: Truth table of even parity generator**
+
+  <table style="text-align:center;margin-right:8%;color:black;">
        <tr style="border:1px solid black;font-size:130%;border-collapse:collapse;">
       <th colspan="3"; style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;">3-bit message</th>
       <th style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;" >Parity bit</th>
@@ -84,8 +87,9 @@ Let us assume that a 3-bit message is to be transmitted with an even parity bit.
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>
-      </table>
-      </center>
+  </table>
+
+</center>
 
   
 
@@ -180,7 +184,7 @@ P= A'(B'C' + BC) + A(B'C + BC')
 P= A’(B ⊕ C)' + A(B ⊕ C)  
 **P= (A ⊕ B ⊕ C)'**  </center>
 
-### **APPLICATIONS AND LIMITATIONS OF PARITY GENERATOR**
+### **Applications and Limitations of Parity Generator**
 
 *   The parity bit is used in applications where a simple error detector is needed and the transmission can be repeated if an error occurs.
 *   This method needs only a single bit to detect errors, which can increase the number of transmissions within a period.

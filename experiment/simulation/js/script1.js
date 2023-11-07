@@ -178,24 +178,35 @@ function draggable(item, container) {
   
 
 function checkCircuit() {
-   
-    var g = new Graph(32);
+  
+
+        var g = new Graph(32);
 
 
   
     var groups = ['row2','row3','row4','row6','row7','row8','input_A', 'input_B','input_C','led_A', 'led_C', 'VCC', 'GND','ic7404_VCC', 'ic7404_4A', 'ic7404_4B', 'ic7404_4Y', 'ic7404_3A', 'ic7404_3B', 'ic7404_3Y', 'ic7404_1A', 'ic7404_1B', 'ic7404_1Y', 'ic7404_2A', 'ic7404_2B', 'ic7404_2Y', 'ic7404_GND', 'row1',   'row5']
     
     console.log(groups.length)
+   
+   
+
     for (var i = 0; i < groups.length; i++) { //inserting groups vertexes
         g.addVertex(groups[i]);
     }
 
+   
     for (key in connections) {  // adding edges
         g.addEdge(connections[key].endpoints[0].getParameter('groupName'), connections[key].endpoints[1].getParameter('groupName'));
     }
    console.log("###noofedges->"+(g.numberofedges-deletecon));
    
-
+   var edges= (g.numberofedges);
+   console.log('edges:'+edges)
+   if(edges == 0)
+   {
+       alert("No connections present.");   
+       return;
+   }
 
     
         if(g.isConnected("ic7404_VCC","VCC")&& g.isConnected("ic7404_GND","GND")){
@@ -321,6 +332,8 @@ function checkCircuit() {
             alert("IC-7486 not connected to supply.");
             document.getElementById("resetbutton").disabled=false;
       }
+    
+    
    
 
 

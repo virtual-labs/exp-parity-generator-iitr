@@ -109,10 +109,10 @@
 .Button-data {
     position: fixed;
     right: 0px;
-    bottom: 20px;
+    bottom:auto;
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
-    overflow: hidden;
+    overflow: scroll;
     z-index:999;
 }
 
@@ -311,10 +311,9 @@
 position: absolute;
 top:57px;
 left:1px;
-visibility: hidden;
-  
-
+visibility: hidden; 
 }
+
 #ic74513img
 {
 position: absolute;
@@ -481,7 +480,14 @@ a
 
 }
 */
-
+button{
+    cursor: pointer;
+}
+button:disabled
+{
+    cursor: not-allowed;
+    opacity:0.6;
+}
 .bottom {
     height: 60px;
     text-align: center;
@@ -497,7 +503,7 @@ a
     border: none;
     font-weight: bold;
     border-radius: 25px;
-    cursor: pointer;
+    color: white;
     border-color: black;
     
 }
@@ -507,6 +513,7 @@ a
     border: 2px rgb(0, 168, 8) solid;
     background: rgb(0, 168, 8);  
     font-weight: bolder;
+   
 }
 #checkbutton:hover                                  
 {
@@ -519,7 +526,7 @@ a
 { border: 2px #5433FF solid;
     background: #5433FF;
     font-weight: bolder;
-
+  
 }
 #startbutton:hover
 {
@@ -532,7 +539,7 @@ a
 {   border: 2px rgb(255, 54, 54) solid;
     background: rgb(255, 54, 54);    
     font-weight: bolder;
-
+    
 }
 #resetbutton:hover 
 {
@@ -549,8 +556,7 @@ button
 {
     font-size: 18px;
     font-style: bold;
-       cursor: pointer;
-       font-family: serif;
+    font-family: serif;
 }
 footer
 {
