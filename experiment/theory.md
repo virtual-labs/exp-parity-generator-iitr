@@ -5,7 +5,9 @@ In digital electronic systems, during data transmission and processing, error ma
 A parity bit is an extra bit included with a binary message to make the number of 1’s either odd or even. We have an even parity, when the added bit is such that the total number of 1s in the data bit string becomes even, and an odd parity, when the added bit makes the total number of 1s in the data bit string odd. This added bit could be a ‘0’ or a ‘1’.  
 <center>
 
-![](images/image1.1.png) </center>
+![](images/image1.1.png) 
+
+ **Fig. 1: Data transmission.**</center>
 
 As an example, if we have to add an even parity bit to 01000001 (the eight-bit ASCII code for ‘A’), it will be a ‘0’ and the number will become 001000001. If we have to add an odd parity bit to the same number, it will be a ‘l’ and the number will become 101000001. The odd parity bit is a complement of the even parity bit.  
 The message, including the parity bit, is transmitted and then checked at the receiving end for errors. An error is detected if the checked parity does not correspond to the one transmitted. The circuit that checks the parity in the receiver is called a paritychecker. A combined circuit or device consisting of parity generator and parity checker is commonly used in digital systems to detect the single bit errors in the transmitted data.  
@@ -22,66 +24,66 @@ Let us assume that a 3-bit message is to be transmitted with an even parity bit.
 
   ![](images/image6.png)
 
-  **Fig. 1: Circuit diagram of even parity generator.**</center>
+  **Fig. 2: Circuit diagram of even parity generator.**</center>
 
-<center>
+<div align="center">
 
   **Table 1: Truth table of even parity generator**
 
-  <table style="text-align:center;margin-right:8%;color:black;">
+  <table style="text-align:center;color:black;">
        <tr style="border:1px solid black;font-size:130%;border-collapse:collapse;">
       <th colspan="3"; style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;">3-bit message</th>
       <th style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;" >Parity bit</th>
       </tr>
-      <tr>
+      <tr align="center">
       <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">A</th>
       <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">B</th>
       <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">C</th>
-      <th style="border:1px solid black;font-size:110%;border-collapse:collapse;text-align:center">P</th>
+      <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">P</th>
       </tr>
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr> 
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr> 
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr> 
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>
-      <tr>
+      <tr align="center">
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
@@ -89,7 +91,7 @@ Let us assume that a 3-bit message is to be transmitted with an even parity bit.
       </tr>
   </table>
 
-</center>
+</div>
 
   
 
@@ -105,75 +107,75 @@ P= A’(B ⊕ C) + A(B ⊕ C)’
 
 The three inputs- A, B and C produces P - the output parity bit, so as to make the total number of 1’s (including P) odd. The circuit diagram of odd parity generator shown in fig.2 along with the Boolean expression for odd parity generator.In Table-2, the parity bit is 1 when the total number of 1’s is odd as a whole (including parity bit).
 
-<center>
+<div align="center">
 
 ![](images/image3ins.png)
 
-**Fig. 2: Circuit diagram of odd parity generator.**
+**Fig. 3: Circuit diagram of odd parity generator.**
 
 **Table 2: Truth table of odd parity generator**
 
-<table style="text-align:center;margin-right:8%;color:black;">
+<table style="text-align:center;color:black;">
       <tr style="border:1px solid black;font-size:130%;border-collapse:collapse;">
       <th colspan="3"; style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;">3-bit message</th>
       <th style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;" >Parity bit</th>
       </tr>
-      <tr>
+      <tr align="center">
       <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">A</th>
-      <th style="border:1px solid black;font-size:110%;;border-collapse:collapse;">B</th>
-      <th style="border:1px solid black;font-size:110%;;border-collapse:collapse;">C</th>
-      <th style="border:1px solid black;font-size:110%;;border-collapse:collapse;text-align:center">P</th>
+      <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">B</th>
+      <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">C</th>
+      <th style="border:1px solid black;font-size:110%;border-collapse:collapse;">P</th>
       </tr> 
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>   
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>   
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>     
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
       </tr>     
-      <tr>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">1</td>
-      <td style="border:1px solid black;font-size:110%;;border-collapse:collapse;">0</td>
+      <tr align="center">
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">1</td>
+      <td style="border:1px solid black;font-size:110%;border-collapse:collapse;">0</td>
       </tr>      
       </table>
-      </center>
+      </div>
   
 
 **Boolean expression of even parity generator**
