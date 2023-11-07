@@ -19,7 +19,7 @@
     <script src="js\jquery.min.js"></script>
 
     <!--JS files-->
-    <script src="js/script2.js"></script>
+    
     <script src="js/graph.js"></script> 
 
     <!--CSS files-->
@@ -81,9 +81,9 @@
                     </div>
 
                     <div class="bottom">
-                        <button id="checkbutton" onclick="checkCircuit()"disabled>Check Connections</button>
-                      <button id="startbutton" onclick="start_simulation()"disabled>Start Simulation</button>
-                      <button id="resetbutton" onclick="resetCircuit()"disabled>Reset Connections </button>
+                        <button id="checkbutton" onclick="checkCircuit()" disabled>Check Connections</button>
+                      <button id="startbutton" onclick="start_simulation()" disabled>Start Simulation</button>
+                      <button id="resetbutton" onclick="resetCircuit()" disabled>Reset Connections </button>
                       </div>
 
 
@@ -107,28 +107,28 @@
                         <li>Make connections as per the circuit diagram.</li>
                         <figure>
                           <img src="images/image3ins.png" style="width:220px;height:auto">
-                          <figcaption style="text-align:center;">Fig. Circuit diagram of odd parity generator.</figcaption><br>
+                          <figcaption style="text-align:center;">Fig. 1 Circuit diagram of odd parity generator.</figcaption><br>
                         </figure>
                         <img src="images/image2ins.png" height="210px" width="150px">
                      <img src="images/image4ins.png" height="210px" width="150px"><br>
-                        Fig: Pin diagram of IC-7486 and IC-7404.</center><br><br>
+                        Fig: 2 Pin diagram of IC-7486 and IC-7404.</center><br><br>
                         <li>Feed input <b>A</b> and <b>B</b> to one gate of IC and input <b>C</b> to another gate.</li>  
                         <li>Click on '<b>Check Connections</b>' button. If connections are right, the '<b>Start Simulation</b>' button will become active. Click on it to start simulation.</li>            
                         <li>Click on the toggle buttons '<b>A</b>', '<b>B</b>' and '<b>C</b>' to perform simulation.</li>
                     </ol></div></div></div></div>
         
-                        <div class="Button-data" id="Second_Data">
+                        <div class="Button-data" id="Second_Data" style="bottom:10px">
                           <div class="Components">
                               <button class="close-btn" id="btn_close"><span>&#10005</span></button>
                               <div>
-                                <button id="breadbutton" onclick="breadboard()">Breadboard</button>
-                        <button id="supplybutton" onclick="supply()">5V DC Supply</button>
-                        <button id="switchbutton" onclick="inputs()">Toggle Switches</button> 
+                                <button id="breadbutton" class="cmpbuttons" onclick="breadboard()">Breadboard</button>
+                        <button id="supplybutton" class="cmpbuttons" onclick="supply()">5V DC Supply</button>
+                        <button id="switchbutton" class="cmpbuttons" onclick="inputs()">Toggle Switches</button> 
                               </div>
                               <div>
-                                <button id="ic1button" onclick="ic74513()">IC-7486</button>
-                                <button id="ic2button" onclick="ic7404()">IC-7404</button>
-                                 <button id="ledbutton" onclick="led1();">LED</button></br>
+                                <button id="ic1button" class="cmpbuttons" onclick="ic74513()">IC-7486</button>
+                                <button id="ic2button" class="cmpbuttons" onclick="ic7404()">IC-7404</button>
+                                 <button id="ledbutton" class="cmpbuttons" onclick="led1();">LED</button></br>
                                    </div>
                           </div>
                       </div>    
@@ -198,7 +198,7 @@
                
 
 </div>
-
+<script src="js/script2.js"></script>
     <script src="js/script3.js"></script>
             </div>
     <div>

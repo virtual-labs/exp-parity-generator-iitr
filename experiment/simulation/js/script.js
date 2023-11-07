@@ -25,6 +25,8 @@ close_btn.addEventListener('click', () => {
 
 Second.addEventListener('click', () => {
  Second_Data.classList.toggle('visible')
+ document.getElementById('reset1').disabled=true;
+ document.getElementById('reset1').style.cursor='not-allowed';
 });  
 
 btn_close.addEventListener('click', () => {
@@ -33,9 +35,26 @@ btn_close.addEventListener('click', () => {
 var left = document.getElementById("Second_Data"); 
 left.style.display ="block";
 // Components hide show code here
+
+
+const check_button = document.getElementById('checkbutton');
+
+
+const bread_but=document.getElementById("breadbutton");
+const supply_but=document.getElementById("supplybutton");
+const switch_but=document.getElementById("switchbutton");
+const ic_but=document.getElementById("ic2button");
+const led_but=document.getElementById("ledbutton");
+
+
+
+
 function breadboard() {
     var x = document.getElementById("board");
     x.style.visibility = "visible";
+
+    bread_but.disabled=true;
+    bread_but.style.cursor="not-allowed";
 
     var instance = new BoardController();
 
@@ -262,114 +281,26 @@ function breadboard() {
 
  
     }
+    disabledButton();
 }
 
 function inputs() {
     var x = document.getElementById("inputs");
     x.style.visibility = "visible";
 
+    switch_but.disabled=true;
+    switch_but.style.cursor="not-allowed";
+
     var inputs = new BoardController();
     inputs.setJsPlumbInstance(jsPlumb);
     inputs.setCircuitContainer('mid');
  
-
     inputs.addEndPoint('purple',5,1, 'inputs', 'input_A', 'input_A1', [0, 0, 0, 0, 619, -100], 'purple');
     inputs.addEndPoint('purple',5,1, 'inputs', 'input_B', 'input_B1', [0, 0, 0, 0, 719, -100], 'purple');
     inputs.addEndPoint('purple',5,1, 'inputs', 'input_C', 'input_B2', [0, 0, 0, 0, 819, -100], 'purple');
+
+    disabledButton();
 }
-/*
-function ic74513() {
-    var x = document.getElementById("ic74513");
-    x.style.visibility = "visible";
-    var y =document.getElementById("ic74513img");
-    y.style.visibility = "visible";
-
-    var ic74513 = new BoardController();
-    ic74513.setJsPlumbInstance(jsPlumb);
-    ic74513.setCircuitContainer('mid');
-
-    {
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_16', 'ic74513_VCC1', [0, 0, 1, -1, 176, 73], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_16', 'ic74513_VCC2', [0, 0, 1, -1, 176, 86.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_16', 'ic74513_VCC3', [0, 0, 1, -1, 176, 100], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_16', 'ic74513_VCC4', [0, 0, 1, -1, 176, 113.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_15', 'ic74513_4A01', [0, 0, 1, -1, 188.5, 73], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_15', 'ic74513_4A02', [0, 0, 1, -1, 188.5, 86.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_15', 'ic74513_4A03', [0, 0, 1, -1, 188.5, 100], 'blue');
-        ic74513.addEndPoint('blue',4.2, 1,'ic74513', 'ic74513_15', 'ic74513_4A04', [0, 0, 1, -1, 188.5, 113.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_14', 'ic74513_4B01', [0, 0, 1, -1, 201.5, 73], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_14', 'ic74513_4B02', [0, 0, 1, -1, 201.5, 86.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_14', 'ic74513_4B03', [0, 0, 1, -1, 201.5, 100], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_14', 'ic74513_4B04', [0, 0, 1, -1, 201.5, 113.5], 'blue');
-
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_13', 'ic74513_4Y01', [0, 0, 1, -1, 214.5, 73], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_13', 'ic74513_4Y02', [0, 0, 1, -1, 214.5, 86.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_13', 'ic74513_4Y03', [0, 0, 1, -1, 214.5, 100], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_13', 'ic74513_4Y04', [0, 0, 1, -1, 214.5, 113.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_12', 'ic74513_3A01', [0, 0, 1, -1, 227.5, 73], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_12', 'ic74513_3A02', [0, 0, 1, -1, 227.5, 86.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_12', 'ic74513_3A03', [0, 0, 1, -1, 227.5, 100], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_12', 'ic74513_3A04', [0, 0, 1, -1, 227.5,113.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_11', 'ic74513_3B01', [0, 0, 1, -1, 240.5, 73], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_11', 'ic74513_3B02', [0, 0, 1, -1, 240.5, 86.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_11', 'ic74513_3B03', [0, 0, 1, -1, 240.5, 100], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_11', 'ic74513_3B04', [0, 0, 1, -1, 240.5, 113.5], 'blue');
-
-        ic74513.addEndPoint('gren',4.2,1, 'ic74513', 'ic74513_10', 'ic74513_3Y01', [0, 0, 1, -1, 254, 73], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_10', 'ic74513_3Y02', [0, 0, 1, -1, 254, 86.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_10', 'ic74513_3Y03', [0, 0, 1, -1, 254, 100], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_10', 'ic74513_3Y04', [0, 0, 1, -1, 254, 113.5], 'blue');
-
-         ic74513.addEndPoint('gren',4.2,1, 'ic74513', 'ic74513_9', 'ic74513_901', [0, 0, 1, -1, 268, 73], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_9', 'ic74513_902', [0, 0, 1, -1, 268, 86.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_9', 'ic74513_903', [0, 0, 1, -1, 268, 100], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_9', 'ic74513_904', [0, 0, 1, -1, 268, 113.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_1', 'ic74513_1A02', [0, 0, 1, -1, 176, 186.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_1', 'ic74513_1A03', [0, 0, 1, -1, 176, 200], 'blue');
-        ic74513.addEndPoint('blue',4.2, 1,'ic74513', 'ic74513_1', 'ic74513_1A04', [0, 0, 1, -1, 176, 213.5], 'blue');
-       ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_1', 'ic74513_1A05', [0, 0, 1, -1, 176, 227], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_2', 'ic74513_1B02', [0, 0, 1, -1, 188.5, 186], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_2', 'ic74513_1B03', [0, 0, 1, -1, 188.5, 199.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_2', 'ic74513_1B04', [0, 0, 1, -1, 188.5, 213], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_2', 'ic74513_1B05', [0, 0, 1, -1, 188.5, 226.5], 'blue');
-
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_3', 'ic74513_1Y02', [0, 0, 1, -1, 201.5, 186], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_3', 'ic74513_1Y03', [0, 0, 1, -1, 201.5, 199.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_3', 'ic74513_1Y04', [0, 0, 1, -1, 201.5, 213], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_3', 'ic74513_1Y05', [0, 0, 1, -1, 201.5, 226.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_4', 'ic74513_2A02', [0, 0, 1, -1, 214.5, 186], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_4', 'ic74513_2A03', [0, 0, 1, -1, 214.5, 199.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_4', 'ic74513_2A04', [0, 0, 1, -1, 214.5, 213], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_4', 'ic74513_2A05', [0, 0, 1, -1, 214.5, 226.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_5', 'ic74513_2B02', [0, 0, 1, -1, 227.5, 186], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_5', 'ic74513_2B03', [0, 0, 1, -1, 227.5, 199.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_5', 'ic74513_2B04', [0, 0, 1, -1, 227.5, 213], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_5', 'ic74513_2B05', [0, 0, 1, -1, 227.5, 226.5], 'blue');
-
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_6', 'ic74513_2Y02', [0, 0, 1, -1, 240.5, 186], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_6', 'ic74513_2Y03', [0, 0, 1, -1, 240.5, 199.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_6', 'ic74513_2Y04', [0, 0, 1, -1, 240.5, 213], 'blue');
-       ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_6', 'ic74513_2Y05', [0, 0, 1, -1, 240.5, 226.5], 'blue');
-
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_7', 'ic74513_GND02', [0, 0, 1, -1, 254, 186], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_7', 'ic74513_GND03', [0, 0, 1, -1, 254, 199.5], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_7', 'ic74513_GND04', [0, 0, 1, -1, 254, 213], 'blue');
-        ic74513.addEndPoint('blue',4.2,1, 'ic74513', 'ic74513_7', 'ic74513_GND05', [0, 0, 1, -1, 254, 226.5], 'blue');
-
-        ic74513.addEndPoint('gren',4.2,1, 'ic74513', 'ic74513_8', 'ic74513_801', [0, 0, 1, -1, 268, 186], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_8', 'ic74513_802', [0, 0, 1, -1, 268, 199.5], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_8', 'ic74513_803', [0, 0, 1, -1, 268, 213], 'blue');
-        ic74513.addEndPoint('green',4.2,1, 'ic74513', 'ic74513_8', 'ic74513_804', [0, 0, 1, -1, 268, 226.5], 'blue');
-    }
-}*/
 
 
 function ic7404() {
@@ -377,6 +308,10 @@ function ic7404() {
     x.style.visibility = "visible";
     var y = document.getElementById("ic7404img");
     y.style.visibility = "visible";
+
+    ic_but.disabled=true;
+    ic_but.style.cursor="not-allowed";
+
     var ic7404 = new BoardController();
     ic7404.setJsPlumbInstance(jsPlumb);
     ic7404.setCircuitContainer('mid');
@@ -452,11 +387,15 @@ function ic7404() {
         ic7404.addEndPoint('blue',4.2,1, 'ic7404', 'ic7404_GND', 'ic7404_GND04', [0, 0, 1, -1, 88, 136.5], 'red');
         ic7404.addEndPoint('blue',4.2,1, 'ic7404', 'ic7404_GND', 'ic7404_GND05', [0, 0, 1, -1, 88, 150], 'red');
     }
+    disabledButton();
 }
 
 function led1() {
     var x = document.getElementById("led");
     x.style.visibility = "visible";
+
+    led_but.disabled=true;
+    led_but.style.cursor="not-allowed";
 
     var led = new BoardController();
     led.setJsPlumbInstance(jsPlumb);
@@ -472,11 +411,15 @@ function led1() {
     led.addEndPoint('blue',4.2,1, 'led', 'led_A', 'led_A04', [0, 0, 1, -1, 52, 124], 'red');
     led.addEndPoint('blue',4.2,1, 'led', 'led_A', 'led_A05', [0, 0, 1, -1, 52, 137.5], 'red');
 
+    disabledButton();
 }
 
 function supply() {
     var x = document.getElementById("supply");
     x.style.visibility = "visible";
+    
+    supply_but.disabled=true;
+    supply_but.style.cursor="not-allowed";
     
     var supply = new BoardController();
     supply.setJsPlumbInstance(jsPlumb);
@@ -485,9 +428,24 @@ function supply() {
 
     supply.addEndPoint('red',9,1, 'supply', 'VCC', 'VCC', [0, 0, 0,0, 58, 62], 'blue');
     supply.addEndPoint('black',9,1, 'supply', 'GND', 'GND', [0, 0, 0, 0, 113, 62], 'red');
+    disabledButton();
 }
 
+function disabledButton()
+{
 
+  if(window.getComputedStyle(document.getElementById('board')).visibility === "visible" && window.getComputedStyle(document.getElementById('led')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('ic7404')).visibility === "visible" && window.getComputedStyle(document.getElementById('supply')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('input_A')).visibility === "visible"&& window.getComputedStyle(document.getElementById('input_B')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('input_C')).visibility === "visible")
+  {
+  check_button.disabled=false;
+
+   document.getElementById('second').disabled=true;
+   document.getElementById("second").style.cursor="not-allowed"; 
+
+  }
+}
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -514,10 +472,15 @@ function check1()                     //CHECK IF THE TABLE FILLED IS RIGHT OR NO
             { 
                   alert("Right data. You can proceed to simulation.");
 
+                  document.getElementById('check1').disabled=true;
+                  document.getElementById('check1').style.cursor='not-allowed';
                   document.getElementById("second").disabled=false;
                   document.getElementById("second").style.cursor="pointer"; 
                        
-                 document.getElementById("checkbutton").disabled=false;
+                  Second.style.cursor="pointer";  
+                  document.querySelectorAll('.cell').forEach(elem => {
+                    elem.disabled = true;elem.style.cursor="not-allowed"
+                });
                           
 
                       }
@@ -545,7 +508,15 @@ function check1()                     //CHECK IF THE TABLE FILLED IS RIGHT OR NO
           {
                   if(confirm("Do you want to reset?")){
          
+                    document.getElementById("check1").disabled=false;
+                document.getElementById("second").disabled=true;
+                document.getElementById("second").style.cursor="not-allowed";
         
+                Second.style.cursor="pointer";  
+                  document.querySelectorAll('.cell').forEach(elem => {
+                    elem.disabled = false;elem.style.cursor=""
+                });
+
                 document.getElementById("cell1").value='';
                 document.getElementById("cell2").value='';
 
@@ -557,6 +528,11 @@ function check1()                     //CHECK IF THE TABLE FILLED IS RIGHT OR NO
                document.getElementById("cell6").value='';
                document.getElementById("cell7").value='';
                document.getElementById("cell8").value='';
+
+               document.getElementById('check1').disabled=false;
+                  document.getElementById('check1').style.cursor='pointer';
+                  document.getElementById("second").disabled=true;
+                  document.getElementById("second").style.cursor="not-allowed"; 
             
          }
 
@@ -808,6 +784,10 @@ function afterSimulation1()
                document.getElementById("cell7").value='0';
                document.getElementById("cell8").value='1';
         
+               document.querySelectorAll('.cell').forEach(elem => {
+                elem.disabled = true;elem.style.cursor="not-allowed"
+            });
+            
 document.getElementById("startbutton").disabled=true;
 
 
@@ -823,7 +803,12 @@ document.getElementById("startbutton").disabled=true;
 
   document.getElementById("second").disabled=false;
   document.getElementById("second").style.cursor="pointer"; 
-                        document.getElementById("checkbutton").disabled=false;
+
+  document.getElementById('check1').disabled=true;
+                  document.getElementById('check1').style.cursor='not-allowed';
+     
+                  document.getElementById('reset1').disabled=true;
+                        //document.getElementById("checkbutton").disabled=false;
                         //document.getElementById("resetbutton").disabled=false;
 
        breadboard();

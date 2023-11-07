@@ -23,6 +23,8 @@ close_btn.addEventListener('click', () => {
 
 Second.addEventListener('click', () => {
  Second_Data.classList.toggle('visible')
+ document.getElementById('reset1').disabled=true;
+ document.getElementById('reset1').style.cursor='not-allowed';
 });  
 
 btn_close.addEventListener('click', () => {
@@ -209,7 +211,7 @@ function draggable(item, container) {
 
 function checkCircuit() {
    
-    var g = new Graph(50);
+        var g = new Graph(50);
 
 
   
@@ -224,7 +226,13 @@ function checkCircuit() {
         g.addEdge(connections[key].endpoints[0].getParameter('groupName'), connections[key].endpoints[1].getParameter('groupName'));
     }
    console.log("###noofedges->"+(g.numberofedges-deletecon));
-
+   var edges= (g.numberofedges);
+   console.log('edges:'+edges)
+   if(edges == 0)
+   {
+       alert("No connections present.");   
+       return;
+   }
 
  if(g.isConnected("ic74513_14","VCC")&& g.isConnected("ic74513_7","GND")){
           
@@ -640,6 +648,8 @@ function checkCircuit() {
     document.getElementById("resetbutton").disabled=false;
             alert("IC-7486 not connected to supply.");
       }
+     
+    
    
 
 

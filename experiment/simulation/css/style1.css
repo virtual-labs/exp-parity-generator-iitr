@@ -511,11 +511,15 @@ a
     border: none;
     font-weight: bold;
     border-radius: 25px;
-    cursor: pointer;
+    color:white;
     border-color: black;
     
 }
-
+button:disabled
+{
+    cursor:not-allowed;
+    opacity:0.6;
+}
 #checkbutton                                      /*      check connections buttton  */
 {   
   
@@ -536,7 +540,7 @@ a
     border: 2px #5433FF solid;
     background: #5433FF;
     font-weight: bolder;
-    
+   
 
 }
 #startbutton:hover

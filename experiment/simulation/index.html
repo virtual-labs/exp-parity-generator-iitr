@@ -4,192 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Even Parity Generator</title>
+    <title>Parity Generator</title>
 
-    <!--JSplumb-->
-    <link rel="stylesheet" href="css\jsplumbtoolkit-defaults.css">
-    <script src="js\jsplumb.min.js"></script>
-
-    <script src="js\jquery-latest.js"></script>
-    <script src="js\jquery-ui-latest.js"></script>
-    <script src="js\jquery.jsPlumb-1.3.9-all-min.js"></script>
-
-
-    <!--jQuery-->
-    <script src="js\jquery.min.js"></script>
-
-    <!--JS files-->
-    <script src="js/script1.js"></script>
-    <script src="js/graph.js"></script> 
+ 
 
     <!--CSS files-->
-    <link rel="stylesheet" href="css/style.css">
+   
+
+<style>
+           
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+a {
+    
+    color: #3c8dbc;    text-decoration: none;
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <div id="exp-name">
-        <h3>Even Parity Generator</h3>
-    </div>
+    <h2 style="margin-top:5%;margin-left:2%">Simulation</h2>
+    <div style="position: absolute;left:300px;top: 220px;">
+    <a style="width:300px; height:40px; font-size: 20px;" class="btn btn-primary" href="even.html" target="_blank">Even Parity Generator</a><br><br>
+    <a style="width:300px; height:40px; font-size: 20px;" class="btn btn-primary" href="odd.html" target="_blank">Odd Parity Generator</a>
+    </div> 
 
- 
-       
-<div id="simulation">
-    <div class="left"> 
-            <div class="border" id="mid">
-
-                    <div id="board">
-       
-                        <div class="ic" id="ic7404" draggable="true"> <img src="images/ic.png" id="ic7404img" height="45px" width="100px"> 
-                            <label style="font-size: 10px;  color: red; position: absolute; top: 82px;left:8px;">1</label>  
-                            <label style="font-size: 10px;  color: red; position: absolute; top: 82px;left:88px;">7</label>
-                            <label style="font-size: 10px;  color: red; position: absolute;top: 65px;left: 8px;">14</label>
-                            <label style="font-size: 10px;  color: red; position: absolute; top: 65px;left:88px;">8</label>
-                        </div>
-             <!--         <div class="ic" id="ic7404" draggable="true"></div>-->
-                     <div id="led" draggable="true"><img src="images/bulboff.png" id="led2" width="130px"height="90px">
-                     <label style="font-size: 18px; background-color: #fff; border-radius: 4px; color: black; position: absolute; padding: 2px; top: -22px;left:50px;"> P</label>
-                     <label style="font-size: 13px;  color: black; position: absolute; top: 148px;left:50px; "><b>A</b></label>  
-                     <label style="font-size: 13px;  color: black; position: absolute; top: 148px;left:64px; "><b>C</b></label>
-                     <label style="font-size: 22px; color: red; position: absolute; top: 78px;left:37px; font-weight: bolder;">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</label>
-                     </div>
-                                         	
-                    </div>
-             
-
-                    <div id="supply" draggable="true"><img src="images/supply.png" id="powersup" height="100px" width="155px" style="border-radius: 10px"/></div>
-                    
-                    <div id="inputs" draggable="true">
-                        <label id="a" >A</label>
-                        <div id="input_A" onclick="toggle_A()"><img src="images/toggleoff1.png" id="switch1" width="40px"height="70px" onmouseover="this.style.cursor='pointer'"></div>
-                        <div id="input_B" onclick="toggle_B()"><img src="images/toggleoff1.png" id="switch2" width="40px"height="70px" onmouseover="this.style.cursor='pointer'"></div>
-                        <label id="b">B</label>
-                        <div id="input_C" onclick="toggle_C()"><img src="images/toggleoff1.png" id="switch3" width="40px"height="70px" onmouseover="this.style.cursor='pointer'"></div>
-                        <label id="c">C</label>
-                    </div>
-
-                    <div class="bottom">
-                        <button id="checkbutton" onclick="checkCircuit()"disabled>Check Connections</button>
-              <button id="startbutton" onclick="start_simulation()"disabled>Start Simulation</button>
-              <button id="resetbutton" onclick="resetCircuit()"disabled>Reset Connections </button>
-                      </div>
-
-
-
-         
-            </div>
-
-   </div>    
-          
-   <div class="right">      
-    <div>
-        <button class="right_btn" id="First">Instructions</button>
-        <button class="right_btn com" id="second" disabled>Components</button>
-        <div class="Button-data" id="First_Data" style="display: none">
-            <div class="panel">
-                <button class="close-btn" id="close-btn"><span>&#10005</span></button>
-               <div id="first_insrt">
-                <ol type="1" style="padding: 10px; text-align: justify;">
-                  <li>Fill the truth table and click on <b>'CHECK'</b> button.</li>
-                    <li>Click on the components button to place the component.</li>               
-                    <li>Make connections as per the circuit diagram.</li>
-                    <figure>
-                      <img src="images/image1ins.png" style="width:220px;height:auto">
-                      <figcaption style="text-align:center;">Fig. Circuit diagram of even parity generator.</figcaption><br>
-                      <img src="images/image2ins.png" height="200px" width="200px">
-                      <figcaption style="text-align:center;">Fig. Pin diagram of IC-7486.</figcaption>
-                    </figure>
-                    <li>Feed input <b>A</b> and <b>B</b> to one gate of IC and input <b>C</b> to another gate.</li>  
-                    <li>Click on '<b>Check Connections</b>' button. If connections are right, the '<b>Start Simulation</b>' button will become active. Click on it to start simulation.</li> 
-                    <li>Click on the toggle switches '<b>A</b>', '<b>B</b>' and '<b>C</b>' to perform simulation.</li>           
-                    </ol></div></div></div></div>
-    
-                    <div class="Button-data" id="Second_Data">
-                      <div class="Components">
-                          <button class="close-btn" id="btn_close"><span>&#10005</span></button>
-                          <div>
-                            <button id="breadbutton" onclick="breadboard()">Breadboard</button>
-                        <button id="supplybutton" onclick="supply()">5V DC Supply</button>
-                        <button id="switchbutton" onclick="inputs()">Toggle Switches</button>   
-                          </div>
-                          <div>
-                            <button id="ic2button" onclick="ic7404()">IC-7486</button>          
-                        <button id="ledbutton" onclick="led1();">LED</button></br>
-                               </div>
-                      </div>
-                  </div> 
-      
-     <div class="mytable">  <!--truth table heading-->
-                    <h3 align="center" style="font-size:18px;"><u>TRUTH TABLE</u></br></br>Components button will remain inactive until Truth-Table is filled correctly.</h3>
-                    <table id="table" background-color="white" border="2px">  
-                         <!--  table for full subtractor -->
-                        <tr style="background-color: #3c8bcd">
-                            <th width="350px"> &nbsp;  &nbsp;INPUTS     &nbsp;</br> A  &nbsp;  &nbsp;&nbsp; &nbsp; B&nbsp;   &nbsp;  &nbsp;  &nbsp; C  </th>
-                            
-                            <th> PARITY BIT </br> P  </th>
-                        </tr>
-                        <tr> 
-                            <th>0    &nbsp;   &nbsp;   &nbsp;  &nbsp;  &nbsp; 0    &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;0 </th>
-                            
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell1" maxlength="1"  /></th>
-                               
-                        </tr>
-                        <tr>
-                            <th>0   &nbsp;    &nbsp;   &nbsp;   &nbsp; &nbsp; 0   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;1</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell2" maxlength="1" /></th>
-                              
-                        </tr>
-                        <tr>
-                            <th>0   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;1   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;0</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell3" maxlength="1" /></th>
-                                
-                        </tr>
-                        <tr>
-                            <th>0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
-                        
-                               <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell4"   maxlength="1" /></th>
-                              
-                        </tr>
-                        <tr>
-                            <th>1   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell5"  maxlength="1" /></th>
-                               
-                        </tr>
-                        <tr>
-                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell6" maxlength="1" /></th>
-                                
-                        </tr>
-                        <tr>
-                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell7" maxlength="1" /></th>
-                                
-                        </tr>
-                        <tr>
-                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
-                            
-                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell8" maxlength="1" /></th>
-                                
-                        </tr>
-                    </table>
-                    <button id="check1" onclick="check1()" onmouseover="this.style.cursor='pointer'"> CHECK</button>    <!-- check button-->
-                    <button id="reset1" onclick="reset1()" onmouseover="this.style.cursor='pointer'">RESET</button>     <!-- RESET button-->
-                </div>
-               
-</div>
-
-
-    <script src="js/script.js"></script>
-</div>
-    <div>
-        <footer><b>&copy;</b> Copyright 2022 Virtual Labs, IIT Roorkee</footer>
-      </div>
 </body>
-
-</html>

@@ -1,7 +1,7 @@
 ## Procedure<br>
 <div style=text-align:justify">
 
-#### Choose between **'Even Parity Generator'** or **'Odd Parity Generator'** from **Simulation** tab.
+#### Click on either the **"Even Parity Generator"** or **"Odd Parity Generator"** option from the **"Simulation"** tab. 
 
 #### Familiarise with components:
 <center>
