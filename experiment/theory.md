@@ -26,11 +26,10 @@ Let us assume that a 3-bit message is to be transmitted with an even parity bit.
 
   **Fig. 2: Circuit diagram of even parity generator.**</center>
 
-<div align="center">
 
   **Table 1: Truth table of even parity generator**
 
-  <table style="text-align:center;color:black;">
+  <table style="text-align:center;color:black;margin-left: auto;margin-right: auto;">
        <tr style="border:1px solid black;font-size:130%;border-collapse:collapse;">
       <th colspan="3"; style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;">3-bit message</th>
       <th style="border:1px solid black;border-collapse:collapse;width:110px;text-align:center;" >Parity bit</th>
@@ -91,7 +90,7 @@ Let us assume that a 3-bit message is to be transmitted with an even parity bit.
       </tr>
   </table>
 
-</div>
+
 
   
 
