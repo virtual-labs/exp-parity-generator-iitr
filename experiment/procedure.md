@@ -29,7 +29,7 @@
 
 **Table 1: Connection table for even parity generator**
 
-![](images/table1.png) </center>
+![](images/Table1.png) </center>
 
 4\. Feed input **A** and **B** to one gate of IC and input **C** to another gate.  
 5\. Click on '**Check Connections**' button. If connections are right, the '**Start Simulation**' button will become active. Click on it to start simulation.  
