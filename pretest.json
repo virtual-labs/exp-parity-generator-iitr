@@ -1,0 +1,10 @@
+[{"question":"When the inputs to an exclusive-OR are the same logic level, the output is","answers":{"a":"Zero","b":"One","c":"High","d":"Indeterminate"},"correctAnswer":"a"},
+{"question":"How many exclusive-OR gates are needed for the circuit of 4–bit parity generator?","answers":{"a":"One","b":"Two","c":"Three","d":"Four"},"correctAnswer":"c"},
+{"question":"Which gates are ideal for generating the even parity bits?","answers":{"a":"AND","b":"EX-NOR","c":"EX-OR","d":"NAND"},"correctAnswer":"c"},
+{"question":"The Boolean equation for the exclusive-OR function is","answers":{"a":"X=A'B+AB'","b":"X=A'B'+AB","c":"X=AB","d":"X=A+B"},"correctAnswer":"a"},
+{"question":"Which data and parity bit combination is correct for an ODD parity data transmission system?","answers":{"a":"data = 1110 0000 parity = 1","b":"data = 0100 1010 parity = 1","c":"data = 0000 0000 parity = 0","d":"data = 1111 1111 parity = 1"},"correctAnswer":"d"},
+{"question":"The odd parity output of decimal number 9 is","answers":{"a":"1","b":"0011","c":"0","d":"1001"},"correctAnswer":"a"},
+{"question":"In an even parity system, which of the following will generate a LOW parity bit?","answers":{"a":"1110101","b":"1001111","c":"1011010","d":"1000000"},"correctAnswer":"c"},
+{"question":"How many types of parity bits are found?","answers":{"a":"3","b":"4","c":"2","d":"1"},"correctAnswer":"c"},
+{"question":"Parity generator is a","answers":{"a":"Sequential circuit","b":"Combinational circuit","c":"Message generator","d":"None of the above"},"correctAnswer":"b"},
+{"question":"For even parity generator, number of 1s in message","answers":{"a":"Becomes odd","b":"Becomes even","c":"Does not change","d":"Can't say"},"correctAnswer":"b"}]
