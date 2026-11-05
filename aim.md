@@ -1,0 +1,1 @@
+#### To design a 3-bit even/odd parity generator circuit.
