@@ -185,7 +185,7 @@ P= A'(B'C' + BC) + A(B'C + BC')
 P= A’(B ⊕ C)' + A(B ⊕ C)  
 **P= (A ⊕ B ⊕ C)'**  </center>
 
-### **Applications and Limitations of Parity Generator**
+### **Applications and Limitations of a Parity Generator**
 
 *   The parity bit is used in applications where a simple error detector is needed and the transmission can be repeated if an error occurs.
 *   This method needs only a single bit to detect errors, which can increase the number of transmissions within a period.
